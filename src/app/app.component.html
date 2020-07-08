@@ -28,7 +28,7 @@
 
 </head>
 
-<body>
+<body *ngIf="flag">
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -79,7 +79,7 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <div class="post-preview" *ngFor="let post of blogResult | async ">
-          <a routerLink="blog/{{post.id}}">
+          <a routerLink="main/{{post.id}}" (click)="show(!flag)">
             <h2 class="post-title">
               {{post.title}}
             </h2>

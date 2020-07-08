@@ -5,10 +5,11 @@ import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
   {
-    path: "blog/:id",
+    path: "main/:id",
     component: MainComponent
   }
 ];
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -17,7 +18,7 @@ const routes: Routes = [
 export class AppRoutingModule {
   // constructor(private router: Router) { }
   // navigateTo() {
-  //   this.router.navigateByUrl(':id');
+  //   this.router.navigate["//:id"];
+  // }
+
 }
-
-
